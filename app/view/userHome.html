@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Library Application</title>
+  </head>
+  <body>
+    <header>
+  		<h2>College Library</h2>
+			<h3>LIBRARY MANAGEMENT</h3>
+		</header>
+		<div class="row">
+			<div class="col-t-3 col-d-3 navigation">
+				<ul>
+					<li>Electricals/ Electronics</li>
+					<li>Computer Science</li>
+					<li>Automobile</li>
+					<li>Mechanical</li>
+					<li>Fashion/ Textile</li>
+				</ul>
+			</div>
+			<div class="col-t-9 col-d-6">
+				Your Information
+			
+				<table>
+					<tr>
+						<td>NAME:</td>
+						<td>{{userDetails.firstname}} {{userDetails.lastname}}</td>
+					</tr>
+					<tr>
+						<td>USER ID: </td>
+						<td>{{userDetails.id}}</td>
+					</tr>
+					<tr>
+						<td>DEPARTMENT: </td>
+						<td>{{userDetails.department}}</td>
+					</tr>
+					<tr>
+						<td>ROLE: </td>
+						<td>{{userDetails.role}}</td>
+					</tr>
+					<tr>
+						<td>BOOKS BORROWED:</td>
+						<td>
+						<ul >
+							<li ng-repeat = "book in userDetails.booksBorrowed">
+								{{book.name}} {{book.author}}
+							</li>
+						</ul>
+						</td>
+					</tr>
+				</table>
+				<div>
+					<input type="button" ng-model="submit" value="Logout" ng-click="logout()"></input>
+				</div>
+				</div>
+		</div>
+		<footer><p>Contact us: <a href="admin.lib@gmail.com">admin.lib@gmail.com</a></p></footer>
+  </body>
+</html>

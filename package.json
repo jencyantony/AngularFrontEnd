@@ -1,0 +1,22 @@
+{
+  "name": "librarymanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-amd": "^0.2.1",
+    "angular-route": "^1.6.6",
+    "bower": "^1.8.2",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-open": "^2.0.0",
+    "requirejs": "^2.3.5"
+  }
+}

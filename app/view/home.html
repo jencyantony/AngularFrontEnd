@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Library Application</title>
+  </head>
+  <body>
+    <header>
+  		<h2>College Library</h2>
+			<h3>LIBRARY MANAGEMENT</h3>
+		</header>
+		<div class="row">
+			<div class="col-t-3 col-d-3 navigation">
+				<ul>
+					<li>Electricals/ Electronics</li>
+					<li>Computer Science</li>
+					<li>Automobile</li>
+					<li>Mechanical</li>
+					<li>Fashion/ Textile</li>
+				</ul>
+			</div>
+			<div class="col-t-9 col-d-6">
+				Welcome to the Library Management system
+			</div>
+			<div class="col-t-12 col-d-3">
+				<table>
+					<tr>
+						<td>ROLE:</td>
+						<td><select ng-model="role">
+	      						<option value="Student">Student</option>
+	      						<option value="Admin">Admin</option>
+	    					</select>
+	   					</td>
+					</tr>
+          			<tr>
+						<h2>LOG IN</h2>
+					</tr>
+					<tr>
+						<td>USERNAME:</td>
+						<td><input type="text" ng-model="userName"></input></td>
+					</tr>
+					<tr>
+						<td>PASSWORD:</td>
+						<td><input type="password" ng-model="password"></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="button" ng-model="submit" value="LOGIN" ng-click="login()"></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="button" ng-model="register" value="NEW USER? REGISTER" ng-click="register()"/></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<footer><p>Contact us: <a href="admin.lib@gmail.com">admin.lib@gmail.com</a></p></footer>
+  </body>
+</html>
